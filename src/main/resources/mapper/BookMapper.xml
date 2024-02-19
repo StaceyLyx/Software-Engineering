@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.se.onlinelibrary.mapper.BookMapper">
+
+    <select id="findBookBySearchStringFromIsbn" resultType="com.se.onlinelibrary.bean.book.Book" parameterType="String">
+        SELECT
+            book.*
+        FROM
+            book
+        WHERE
+            isbn LIKE #{searchString}
+    </select>
+
+    <select id="findBookBySearchStringFromAuthorName" resultType="com.se.onlinelibrary.bean.book.Book" parameterType="String">
+        SELECT
+            book.*
+        FROM
+            book
+        WHERE
+            author_name LIKE #{searchString}
+    </select>
+
+    <select id="findBookBySearchStringFromTitle" resultType="com.se.onlinelibrary.bean.book.Book" parameterType="String">
+        SELECT
+            book.*
+        FROM
+            book
+        WHERE
+            title LIKE #{searchString}
+    </select>
+
+</mapper>

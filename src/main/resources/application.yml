@@ -1,0 +1,60 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/BMS_database_security
+    username: root
+    password:
+    druid:
+      filters: stat,wall #stat监控sql；wall防火墙
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: admin
+        reset-enable: false
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+
+      filter:
+        stat:
+          slow-sql-millis: 1000
+          log-slow-sql: true
+          enabled: true
+        wall:
+          enabled: true
+          config:
+            drop-table-allow: false
+
+
+  #  jpa:
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#  mvc:
+#    hiddenmethod:
+#      filter:
+#        enabled: true
+
+  jdbc:
+    template:
+      query-timeout: 3
+
+server:
+  port: 8181
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+
+jwt:
+  validity: 18000000 #600000 18000000
+  secret: FdseFdse2021
+  antMatchers: /login/**,/register/**,/static/**
+
+#mybook:
+#    bookId: 1
+#    title: Little Women
+#    authorId: 1
+#    authorName: 路易莎·梅·奥尔科特;
+#    description: xxx
+#    ISBN: 123-123

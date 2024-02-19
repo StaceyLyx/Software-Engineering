@@ -1,0 +1,18 @@
+.welcomeWindow {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(84, 92, 100);
+}
+
+
+
+.myTag {
+    /*color: #62c770;*/
+    color: #FFD04B;
+    font-weight: bold;
+}
+
+.myTag2 {
+    font-weight: bold;
+    color: #B3C0D1;
+}

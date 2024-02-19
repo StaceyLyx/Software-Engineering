@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.se.onlinelibrary.mapper.UserMapper">
+
+<!--    <select id="getUserAuthorityId" parameterType="com.se.onlinelibrary.bean.user.UserAuthority">-->
+
+<!--    </select>-->
+    <select id="findAuthorityByUserId" resultType="com.se.onlinelibrary.bean.user.Authority" parameterType="int">
+        SELECT
+            r.*
+        FROM
+            authority r
+        LEFT JOIN user_authority ur ON ur.authority_id = r.id
+        WHERE
+            ur.user_id = #{id}
+    </select>
+</mapper>

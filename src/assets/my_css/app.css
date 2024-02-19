@@ -1,0 +1,292 @@
+/*borrow by reservation*/
+.bt-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*App.vue*/
+
+.hidden-component {
+    display: none;
+}
+
+.appSubWindow {
+    min-height: 100vh;
+}
+
+#menuNav {
+    border-bottom: 0px transparent;
+}
+
+el-header router-link {
+    width: 170px;
+    font-weight: bolder;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+}
+
+
+/* ~~ */
+/* user*/
+.my-info-input-group {
+    padding: 10px;
+
+    child-align: top;
+    margin-bottom: 5px;
+}
+
+.my-info-input {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-right: 20px;
+}
+
+.my-info-input {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.my-info-input:hover {
+    box-shadow: 1px 3px 10px #dcdcdc;
+
+}
+
+.my-info-input-button {
+    font-weight: bolder;
+    color: #909399;
+    background-color: #F5F7FA;
+    border: 1px solid #DCDFE6;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+/*@keyframes bt-color-change-hover {
+    from {
+        box-shadow: 0 0 0 transparent
+    }
+    to {
+        box-shadow: 1px 3px 10px #dcdcdc
+    }
+}
+
+ */
+.my-info-input-ele:hover {
+    border-color: #C0C4CC;
+}
+
+.my-info-input-button:hover {
+    background-color: #F5F7FA;
+
+    box-shadow: 1px 3px 10px #dcdcdc;
+    /*border-color: #C0C4CC;*/
+    color: #909399;
+}
+
+h3 {
+    margin: 40px 0 0;
+}
+
+div.content {
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px #2c3e50;
+    border-radius: 5px;
+    box-shadow: 0 0 24px 12px rgba(0, 0, 0, 0.2);
+    padding: 40px 30px 20px 20px;
+}
+
+div.inner-content {
+    font-size: large;
+    font-weight: lighter;
+    background-color: white;
+    width: 1080px;
+    margin: auto;
+
+
+    height: fit-content;
+    border: 1px #2c3e50;
+    display: block;
+    padding: 0;
+
+}
+
+.userWindow {
+    margin-top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(84, 92, 100);
+}
+
+.myTag {
+    color: #FFD04B;
+    font-weight: bold;
+}
+
+/*~~~~*/
+/**/
+
+.inner-pane {
+    display: inline-block;
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+}
+
+.my-table-pane {
+    width: 900px;
+    border-radius: 4px;
+    background-color: white;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px #2c3e50;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px 0px 10px 20px;
+    font-weight: lighter;
+
+    line-height: 20px;
+
+}
+
+.my-table-pane:hover {
+    box-shadow: 0 2px 12px 0 rgb(193, 193, 193);
+
+}
+
+.img-view-div {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.img-book {
+    vertical-align: super;
+    margin: auto;
+    width: 100px;
+}
+
+.my-table-content {
+    margin-left: 20px;
+
+    vertical-align: top;
+    display: inline-block;
+    height: fit-content;
+    width: 400px;
+}
+
+.my-table-operation {
+    margin-left: 20px;
+
+    vertical-align: top;
+    display: inline-block;
+    height: fit-content;
+    width: 100px;
+}
+
+.my-table-para {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: medium;
+    height: fit-content;
+}
+
+.title-bold {
+    color: #282d49;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+/*~~~*/
+
+/*~~~~*/
+
+/* register.vue & addAmdin.vue */
+
+#register-defined-pane {
+    width: 700px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px #2c3e50;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 40px 30px 20px 20px;
+}
+
+
+.registerWindow {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(84, 92, 100);
+}
+
+/*~~~~~*/
+
+/* login.vue  */
+
+#defined-pane {
+    width: 500px;
+    border-radius: 4px;
+    background-color: white;
+    height: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px #2c3e50;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    padding: 40px 30px 20px 20px;
+}
+
+.loginWindow {
+    /*color: #dddddd;*/
+    height: 100%;
+    width: 100%;
+    background-color: rgb(84, 92, 100);
+}
+
+.alertMsg {
+    padding-left: 20px;
+    color: #c16161;
+    font-weight: bolder;
+    font-size: small;
+    text-align: center;
+
+}
+
+/* ~~ */
+#my-dialog {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.el-dialog {
+    background-color: transparent;
+}
+
+.el-dialog__body {
+    background-color: transparent;
+    border: 5px solid rgba(0, 0, 0, 0);
+}
+
+
+.el-dialog__footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid rgba(0, 0, 0, 0);
+}
+
